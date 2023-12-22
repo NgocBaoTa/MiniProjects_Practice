@@ -291,7 +291,7 @@
         "kind": 5,
         "importPath": "p3_snake_game.main",
         "description": "p3_snake_game.main",
-        "peekOfCode": "snake = Snake()\n# CREATE FOOD\nfood = Food()\n# CREATE SCOREBOARD\nscoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")",
+        "peekOfCode": "snake = Snake()\n# CREATE FOOD\nfood = Food()\n# CREATE SCOREBOARD\nscoreboard = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")",
         "detail": "p3_snake_game.main",
         "documentation": {}
     },
@@ -300,16 +300,16 @@
         "kind": 5,
         "importPath": "p3_snake_game.main",
         "description": "p3_snake_game.main",
-        "peekOfCode": "food = Food()\n# CREATE SCOREBOARD\nscoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE",
+        "peekOfCode": "food = Food()\n# CREATE SCOREBOARD\nscoreboard = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE",
         "detail": "p3_snake_game.main",
         "documentation": {}
     },
     {
-        "label": "scoreborad",
+        "label": "scoreboard",
         "kind": 5,
         "importPath": "p3_snake_game.main",
         "description": "p3_snake_game.main",
-        "peekOfCode": "scoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE\ngame_is_on = True\nwhile game_is_on:",
+        "peekOfCode": "scoreboard = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE\ngame_is_on = True\nwhile game_is_on:",
         "detail": "p3_snake_game.main",
         "documentation": {}
     },
@@ -318,7 +318,7 @@
         "kind": 5,
         "importPath": "p3_snake_game.main",
         "description": "p3_snake_game.main",
-        "peekOfCode": "game_is_on = True\nwhile game_is_on:\n    screen.update()\n    time.sleep(0.1)\n    snake.move()\n    # DETECT COLLISION WITH FOOD\n    if snake.head.distance(food) < 15:\n        food.refresh()\n        snake.extend()\n        scoreborad.update_score()",
+        "peekOfCode": "game_is_on = True\nwhile game_is_on:\n    screen.update()\n    time.sleep(0.1)\n    snake.move()\n    # DETECT COLLISION WITH FOOD\n    if snake.head.distance(food) < 15:\n        food.refresh()\n        snake.extend()\n        scoreboard.increase_score()",
         "detail": "p3_snake_game.main",
         "documentation": {}
     },
@@ -327,7 +327,7 @@
         "kind": 6,
         "importPath": "p3_snake_game.scoreboard",
         "description": "p3_snake_game.scoreboard",
-        "peekOfCode": "class ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)\n        self.hideturtle()\n    def update_score(self):",
+        "peekOfCode": "class ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        with open(\"data.txt\") as data:\n            self.high_score = int(data.read())\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.update_scoreboard()",
         "detail": "p3_snake_game.scoreboard",
         "documentation": {}
     },
@@ -336,7 +336,7 @@
         "kind": 5,
         "importPath": "p3_snake_game.scoreboard",
         "description": "p3_snake_game.scoreboard",
-        "peekOfCode": "ALIGHNMENT = \"center\"\nFONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)",
+        "peekOfCode": "ALIGHNMENT = \"center\"\nFONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        with open(\"data.txt\") as data:\n            self.high_score = int(data.read())\n        self.color(\"white\")\n        self.penup()",
         "detail": "p3_snake_game.scoreboard",
         "documentation": {}
     },
@@ -345,7 +345,7 @@
         "kind": 5,
         "importPath": "p3_snake_game.scoreboard",
         "description": "p3_snake_game.scoreboard",
-        "peekOfCode": "FONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)\n        self.hideturtle()",
+        "peekOfCode": "FONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        with open(\"data.txt\") as data:\n            self.high_score = int(data.read())\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)",
         "detail": "p3_snake_game.scoreboard",
         "documentation": {}
     },
