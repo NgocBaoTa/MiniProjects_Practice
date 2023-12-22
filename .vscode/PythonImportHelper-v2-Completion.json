@@ -1,0 +1,550 @@
+[
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Screen",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Screen",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Screen",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Screen",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Snake",
+        "importPath": "snake",
+        "description": "snake",
+        "isExtraImport": true,
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "Food",
+        "importPath": "food",
+        "description": "food",
+        "isExtraImport": true,
+        "detail": "food",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreBoard",
+        "importPath": "scoreboard",
+        "description": "scoreboard",
+        "isExtraImport": true,
+        "detail": "scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "Scoreboard",
+        "importPath": "scoreboard",
+        "description": "scoreboard",
+        "isExtraImport": true,
+        "detail": "scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "player",
+        "description": "player",
+        "isExtraImport": true,
+        "detail": "player",
+        "documentation": {}
+    },
+    {
+        "label": "CarManager",
+        "importPath": "car_manager",
+        "description": "car_manager",
+        "isExtraImport": true,
+        "detail": "car_manager",
+        "documentation": {}
+    },
+    {
+        "label": "move_forwards",
+        "kind": 2,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "def move_forwards():\n    tim.forward(10)\ndef move_backwards():\n    tim.backward(10)\ndef turn_left():\n    tim.left(10)\ndef turn_right():\n    tim.right(10)\ndef clear():\n    tim.clear()",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "move_backwards",
+        "kind": 2,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "def move_backwards():\n    tim.backward(10)\ndef turn_left():\n    tim.left(10)\ndef turn_right():\n    tim.right(10)\ndef clear():\n    tim.clear()\n    tim.penup()\n    tim.home()",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "turn_left",
+        "kind": 2,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "def turn_left():\n    tim.left(10)\ndef turn_right():\n    tim.right(10)\ndef clear():\n    tim.clear()\n    tim.penup()\n    tim.home()\n    tim.pendown()\nscreen.listen()",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "turn_right",
+        "kind": 2,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "def turn_right():\n    tim.right(10)\ndef clear():\n    tim.clear()\n    tim.penup()\n    tim.home()\n    tim.pendown()\nscreen.listen()\nscreen.onkey(move_forwards, \"Up\")\nscreen.onkey(move_backwards, \"Down\")",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "clear",
+        "kind": 2,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "def clear():\n    tim.clear()\n    tim.penup()\n    tim.home()\n    tim.pendown()\nscreen.listen()\nscreen.onkey(move_forwards, \"Up\")\nscreen.onkey(move_backwards, \"Down\")\nscreen.onkey(turn_left, \"Left\")\nscreen.onkey(turn_right, \"Right\")",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "tim",
+        "kind": 5,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "tim = Turtle()\nscreen = Screen()\ndef move_forwards():\n    tim.forward(10)\ndef move_backwards():\n    tim.backward(10)\ndef turn_left():\n    tim.left(10)\ndef turn_right():\n    tim.right(10)",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "p1_drawing.main",
+        "description": "p1_drawing.main",
+        "peekOfCode": "screen = Screen()\ndef move_forwards():\n    tim.forward(10)\ndef move_backwards():\n    tim.backward(10)\ndef turn_left():\n    tim.left(10)\ndef turn_right():\n    tim.right(10)\ndef clear():",
+        "detail": "p1_drawing.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_race_on",
+        "kind": 5,
+        "importPath": "p2_turtle_race.main",
+        "description": "p2_turtle_race.main",
+        "peekOfCode": "is_race_on = False\nscreen = Screen()\nscreen.setup(width=500, height=400)\nuser_bet = screen.textinput(title=\"Make your bet\", prompt=\"Which turle will win the race? Enter a color: \")\ncolors=[\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\nall_turtles = []\nfor turle_index in range(0, 6):\n    new_turtle = Turtle(shape=\"turtle\")\n    new_turtle.color(colors[turle_index])\n    new_turtle.penup()",
+        "detail": "p2_turtle_race.main",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "p2_turtle_race.main",
+        "description": "p2_turtle_race.main",
+        "peekOfCode": "screen = Screen()\nscreen.setup(width=500, height=400)\nuser_bet = screen.textinput(title=\"Make your bet\", prompt=\"Which turle will win the race? Enter a color: \")\ncolors=[\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\nall_turtles = []\nfor turle_index in range(0, 6):\n    new_turtle = Turtle(shape=\"turtle\")\n    new_turtle.color(colors[turle_index])\n    new_turtle.penup()\n    new_turtle.goto(x=-230, y=-70 + turle_index * 30)",
+        "detail": "p2_turtle_race.main",
+        "documentation": {}
+    },
+    {
+        "label": "user_bet",
+        "kind": 5,
+        "importPath": "p2_turtle_race.main",
+        "description": "p2_turtle_race.main",
+        "peekOfCode": "user_bet = screen.textinput(title=\"Make your bet\", prompt=\"Which turle will win the race? Enter a color: \")\ncolors=[\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\nall_turtles = []\nfor turle_index in range(0, 6):\n    new_turtle = Turtle(shape=\"turtle\")\n    new_turtle.color(colors[turle_index])\n    new_turtle.penup()\n    new_turtle.goto(x=-230, y=-70 + turle_index * 30)\n    all_turtles.append(new_turtle)\nif user_bet:",
+        "detail": "p2_turtle_race.main",
+        "documentation": {}
+    },
+    {
+        "label": "all_turtles",
+        "kind": 5,
+        "importPath": "p2_turtle_race.main",
+        "description": "p2_turtle_race.main",
+        "peekOfCode": "all_turtles = []\nfor turle_index in range(0, 6):\n    new_turtle = Turtle(shape=\"turtle\")\n    new_turtle.color(colors[turle_index])\n    new_turtle.penup()\n    new_turtle.goto(x=-230, y=-70 + turle_index * 30)\n    all_turtles.append(new_turtle)\nif user_bet:\n    is_race_on = True\nwhile is_race_on:",
+        "detail": "p2_turtle_race.main",
+        "documentation": {}
+    },
+    {
+        "label": "Food",
+        "kind": 6,
+        "importPath": "p3_snake_game.food",
+        "description": "p3_snake_game.food",
+        "peekOfCode": "class Food(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.shape(\"circle\")\n        self.color(\"blue\")\n        self.penup()\n        self.shapesize(stretch_len=0.5, stretch_wid=0.5)\n        self.speed(\"fastest\")\n        self.refresh()\n    def refresh(self):",
+        "detail": "p3_snake_game.food",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "p3_snake_game.main",
+        "description": "p3_snake_game.main",
+        "peekOfCode": "screen = Screen()\nscreen.setup(width=600, height=600)\nscreen.bgcolor(\"black\")\nscreen.title(\"Snake Game\")\nscreen.tracer(0)     # need to call update() method to update the screen\n# CREATE SNAKE BODY\nsnake = Snake()\n# CREATE FOOD\nfood = Food()\n# CREATE SCOREBOARD",
+        "detail": "p3_snake_game.main",
+        "documentation": {}
+    },
+    {
+        "label": "snake",
+        "kind": 5,
+        "importPath": "p3_snake_game.main",
+        "description": "p3_snake_game.main",
+        "peekOfCode": "snake = Snake()\n# CREATE FOOD\nfood = Food()\n# CREATE SCOREBOARD\nscoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")",
+        "detail": "p3_snake_game.main",
+        "documentation": {}
+    },
+    {
+        "label": "food",
+        "kind": 5,
+        "importPath": "p3_snake_game.main",
+        "description": "p3_snake_game.main",
+        "peekOfCode": "food = Food()\n# CREATE SCOREBOARD\nscoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE",
+        "detail": "p3_snake_game.main",
+        "documentation": {}
+    },
+    {
+        "label": "scoreborad",
+        "kind": 5,
+        "importPath": "p3_snake_game.main",
+        "description": "p3_snake_game.main",
+        "peekOfCode": "scoreborad = ScoreBoard()\n# CONTROL THE SNAKE\nscreen.listen()\nscreen.onkey(snake.up, \"Up\")\nscreen.onkey(snake.down, \"Down\")\nscreen.onkey(snake.left, \"Left\")\nscreen.onkey(snake.right, \"Right\")\n# MOVE THE SNAKE\ngame_is_on = True\nwhile game_is_on:",
+        "detail": "p3_snake_game.main",
+        "documentation": {}
+    },
+    {
+        "label": "game_is_on",
+        "kind": 5,
+        "importPath": "p3_snake_game.main",
+        "description": "p3_snake_game.main",
+        "peekOfCode": "game_is_on = True\nwhile game_is_on:\n    screen.update()\n    time.sleep(0.1)\n    snake.move()\n    # DETECT COLLISION WITH FOOD\n    if snake.head.distance(food) < 15:\n        food.refresh()\n        snake.extend()\n        scoreborad.update_score()",
+        "detail": "p3_snake_game.main",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreBoard",
+        "kind": 6,
+        "importPath": "p3_snake_game.scoreboard",
+        "description": "p3_snake_game.scoreboard",
+        "peekOfCode": "class ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)\n        self.hideturtle()\n    def update_score(self):",
+        "detail": "p3_snake_game.scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "ALIGHNMENT",
+        "kind": 5,
+        "importPath": "p3_snake_game.scoreboard",
+        "description": "p3_snake_game.scoreboard",
+        "peekOfCode": "ALIGHNMENT = \"center\"\nFONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)",
+        "detail": "p3_snake_game.scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "FONT",
+        "kind": 5,
+        "importPath": "p3_snake_game.scoreboard",
+        "description": "p3_snake_game.scoreboard",
+        "peekOfCode": "FONT = (\"Arial\", 16, \"normal\")\nclass ScoreBoard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.score = 0\n        self.color(\"white\")\n        self.penup()\n        self.goto(0, 270)\n        self.write(f\"Score: {self.score}\", align=ALIGHNMENT, font=FONT)\n        self.hideturtle()",
+        "detail": "p3_snake_game.scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "Snake",
+        "kind": 6,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "class Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()\n        self.head = self.segments[0]\n    def create_snake(self):\n        for position in STARTING_POSITIONS:\n            self.add_segment(position)\n    def add_segment(self, position):\n        new_segment = Turtle(shape=\"square\")",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "STARTING_POSITIONS",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]\nMOVE_DISTANCE = 20\nUP = 90\nDOWN = 270\nLEFT = 180\nRIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "MOVE_DISTANCE",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "MOVE_DISTANCE = 20\nUP = 90\nDOWN = 270\nLEFT = 180\nRIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "UP",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "UP = 90\nDOWN = 270\nLEFT = 180\nRIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()\n        self.head = self.segments[0]",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "DOWN",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "DOWN = 270\nLEFT = 180\nRIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()\n        self.head = self.segments[0]\n    def create_snake(self):",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "LEFT",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "LEFT = 180\nRIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()\n        self.head = self.segments[0]\n    def create_snake(self):\n        for position in STARTING_POSITIONS:",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "RIGHT",
+        "kind": 5,
+        "importPath": "p3_snake_game.snake",
+        "description": "p3_snake_game.snake",
+        "peekOfCode": "RIGHT = 0\n# create a class snake\nclass Snake:\n    def __init__(self) -> None:\n        self.segments = []\n        self.create_snake()\n        self.head = self.segments[0]\n    def create_snake(self):\n        for position in STARTING_POSITIONS:\n            self.add_segment(position)",
+        "detail": "p3_snake_game.snake",
+        "documentation": {}
+    },
+    {
+        "label": "CarManager",
+        "kind": 6,
+        "importPath": "p5_turtle_crossing.car_manager",
+        "description": "p5_turtle_crossing.car_manager",
+        "peekOfCode": "class CarManager:\n    def __init__(self):\n        self.all_cars = []\n        self.car_speed = STARTING_MOVE_DISTANCE\n    def create_car(self):\n        random_chance = random.randint(1,6)\n        if random_chance == 1: \n            new_car = Turtle(\"square\")\n            new_car.penup()\n            new_car.shapesize(stretch_wid=1, stretch_len=2)",
+        "detail": "p5_turtle_crossing.car_manager",
+        "documentation": {}
+    },
+    {
+        "label": "COLORS",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.car_manager",
+        "description": "p5_turtle_crossing.car_manager",
+        "peekOfCode": "COLORS = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\nSTARTING_MOVE_DISTANCE = 5\nMOVE_INCREMENT = 10\nclass CarManager:\n    def __init__(self):\n        self.all_cars = []\n        self.car_speed = STARTING_MOVE_DISTANCE\n    def create_car(self):\n        random_chance = random.randint(1,6)\n        if random_chance == 1: ",
+        "detail": "p5_turtle_crossing.car_manager",
+        "documentation": {}
+    },
+    {
+        "label": "STARTING_MOVE_DISTANCE",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.car_manager",
+        "description": "p5_turtle_crossing.car_manager",
+        "peekOfCode": "STARTING_MOVE_DISTANCE = 5\nMOVE_INCREMENT = 10\nclass CarManager:\n    def __init__(self):\n        self.all_cars = []\n        self.car_speed = STARTING_MOVE_DISTANCE\n    def create_car(self):\n        random_chance = random.randint(1,6)\n        if random_chance == 1: \n            new_car = Turtle(\"square\")",
+        "detail": "p5_turtle_crossing.car_manager",
+        "documentation": {}
+    },
+    {
+        "label": "MOVE_INCREMENT",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.car_manager",
+        "description": "p5_turtle_crossing.car_manager",
+        "peekOfCode": "MOVE_INCREMENT = 10\nclass CarManager:\n    def __init__(self):\n        self.all_cars = []\n        self.car_speed = STARTING_MOVE_DISTANCE\n    def create_car(self):\n        random_chance = random.randint(1,6)\n        if random_chance == 1: \n            new_car = Turtle(\"square\")\n            new_car.penup()",
+        "detail": "p5_turtle_crossing.car_manager",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.main",
+        "description": "p5_turtle_crossing.main",
+        "peekOfCode": "screen = Screen()\nscreen.setup(width=600, height=600)\nscreen.tracer(0)\nplayer = Player()\ncar_manager = CarManager()\nscoreborad = Scoreboard()\nscreen.listen()\nscreen.onkeypress(player.go_up, \"Up\")\ngame_is_on = True\nwhile game_is_on:",
+        "detail": "p5_turtle_crossing.main",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.main",
+        "description": "p5_turtle_crossing.main",
+        "peekOfCode": "player = Player()\ncar_manager = CarManager()\nscoreborad = Scoreboard()\nscreen.listen()\nscreen.onkeypress(player.go_up, \"Up\")\ngame_is_on = True\nwhile game_is_on:\n    time.sleep(0.1)\n    screen.update()\n    car_manager.create_car()",
+        "detail": "p5_turtle_crossing.main",
+        "documentation": {}
+    },
+    {
+        "label": "car_manager",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.main",
+        "description": "p5_turtle_crossing.main",
+        "peekOfCode": "car_manager = CarManager()\nscoreborad = Scoreboard()\nscreen.listen()\nscreen.onkeypress(player.go_up, \"Up\")\ngame_is_on = True\nwhile game_is_on:\n    time.sleep(0.1)\n    screen.update()\n    car_manager.create_car()\n    car_manager.move_cars()",
+        "detail": "p5_turtle_crossing.main",
+        "documentation": {}
+    },
+    {
+        "label": "scoreborad",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.main",
+        "description": "p5_turtle_crossing.main",
+        "peekOfCode": "scoreborad = Scoreboard()\nscreen.listen()\nscreen.onkeypress(player.go_up, \"Up\")\ngame_is_on = True\nwhile game_is_on:\n    time.sleep(0.1)\n    screen.update()\n    car_manager.create_car()\n    car_manager.move_cars()\n    # Detect collision with car",
+        "detail": "p5_turtle_crossing.main",
+        "documentation": {}
+    },
+    {
+        "label": "game_is_on",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.main",
+        "description": "p5_turtle_crossing.main",
+        "peekOfCode": "game_is_on = True\nwhile game_is_on:\n    time.sleep(0.1)\n    screen.update()\n    car_manager.create_car()\n    car_manager.move_cars()\n    # Detect collision with car\n    for car in car_manager.all_cars:\n        if car.distance(player) < 25:\n            scoreborad.game_over()",
+        "detail": "p5_turtle_crossing.main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "p5_turtle_crossing.player",
+        "description": "p5_turtle_crossing.player",
+        "peekOfCode": "class Player(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.shape(\"turtle\")\n        self.penup()\n        self.go_to_start()\n        self.setheading(90)\n    def go_up(self):\n        self.forward(MOVE_DISTANCE)\n    def go_to_start(self):",
+        "detail": "p5_turtle_crossing.player",
+        "documentation": {}
+    },
+    {
+        "label": "STARTING_POSITION",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.player",
+        "description": "p5_turtle_crossing.player",
+        "peekOfCode": "STARTING_POSITION = (0, -280)\nMOVE_DISTANCE = 10\nFINISH_LINE_Y = 280\nclass Player(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.shape(\"turtle\")\n        self.penup()\n        self.go_to_start()\n        self.setheading(90)",
+        "detail": "p5_turtle_crossing.player",
+        "documentation": {}
+    },
+    {
+        "label": "MOVE_DISTANCE",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.player",
+        "description": "p5_turtle_crossing.player",
+        "peekOfCode": "MOVE_DISTANCE = 10\nFINISH_LINE_Y = 280\nclass Player(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.shape(\"turtle\")\n        self.penup()\n        self.go_to_start()\n        self.setheading(90)\n    def go_up(self):",
+        "detail": "p5_turtle_crossing.player",
+        "documentation": {}
+    },
+    {
+        "label": "FINISH_LINE_Y",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.player",
+        "description": "p5_turtle_crossing.player",
+        "peekOfCode": "FINISH_LINE_Y = 280\nclass Player(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.shape(\"turtle\")\n        self.penup()\n        self.go_to_start()\n        self.setheading(90)\n    def go_up(self):\n        self.forward(MOVE_DISTANCE)",
+        "detail": "p5_turtle_crossing.player",
+        "documentation": {}
+    },
+    {
+        "label": "Scoreboard",
+        "kind": 6,
+        "importPath": "p5_turtle_crossing.scoreboard",
+        "description": "p5_turtle_crossing.scoreboard",
+        "peekOfCode": "class Scoreboard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.hideturtle()\n        self.penup()\n        self.level = 1\n        self.goto(-280, 260)\n        self.color(\"black\")\n        self.write(f\"Level: {self.level}\", align=\"left\", font=FONT)\n    def update_level(self):",
+        "detail": "p5_turtle_crossing.scoreboard",
+        "documentation": {}
+    },
+    {
+        "label": "FONT",
+        "kind": 5,
+        "importPath": "p5_turtle_crossing.scoreboard",
+        "description": "p5_turtle_crossing.scoreboard",
+        "peekOfCode": "FONT = (\"Courier\", 16, \"normal\")\nclass Scoreboard(Turtle):\n    def __init__(self):\n        super().__init__()\n        self.hideturtle()\n        self.penup()\n        self.level = 1\n        self.goto(-280, 260)\n        self.color(\"black\")\n        self.write(f\"Level: {self.level}\", align=\"left\", font=FONT)",
+        "detail": "p5_turtle_crossing.scoreboard",
+        "documentation": {}
+    }
+]
