@@ -3,6 +3,7 @@ import os
 from tkinter import messagebox
 import random
 import pyperclip
+import json
 
 # ------------------------------ PASSWORD GENERATOR ------------------------------- #
 
@@ -53,23 +54,49 @@ def save_password():
         is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered: \nEmail: {email}\nPassword: {password}\nIs it ok to save?")
 
         if is_ok:
-            # delete the entries
-            website_entry.delete(0, END)
-            email_entry.delete(0, END)
-            password_entry.delete(0, END)
-
-            # if the file does not exist, create the file pass_manager.csv and save the data
+            # if the file does not exist, create a file and save the data
             # if the file exists, append the data to the file
-            if not os.path.exists("pass_manager.csv"):
-                with open("pass_manager.csv", "w") as file:
-                    file.write("website,email,password\n")
-                    file.write(f"{website},{email},{password}\n")
-            else:
-                with open("pass_manager.csv", "a") as file:
-                    file.write(f"{website},{email},{password}\n")
 
-            # refocus the cursor on the website entry
-            website_entry.focus()
+            # using csv file
+            # if not os.path.exists("pass_manager.csv"):
+            #     with open("pass_manager.csv", "w") as file:
+            #         file.write("website,email,password\n")
+            #         file.write(f"{website},{email},{password}\n")
+            # else:
+            #     with open("pass_manager.csv", "a") as file:
+            #         file.write(f"{website},{email},{password}\n")
+
+
+            # using JSON file
+            new_data = {
+                website: {
+                    "email": email,
+                    "password": password,
+                },
+            }
+
+            try: 
+                with open("data.json", "r") as data_file:
+                    # reading old data
+                    data = json.load(data_file)
+            except (FileNotFoundError, json.decoder.JSONDecodeError):
+                with open("data.json", "w") as data_file:
+                    json.dump(new_data, data_file, indent=4)
+            else: 
+                # updating old data with new data
+                data.update(new_data)
+
+                with open("data.json", "w") as data_file:
+                    # saving updated data
+                    json.dump(data, data_file, indent=4)
+            finally:
+                # delete the entries
+                website_entry.delete(0, END)
+                email_entry.delete(0, END)
+                password_entry.delete(0, END)
+
+                # refocus the cursor on the website entry
+                website_entry.focus()
 
 
 
