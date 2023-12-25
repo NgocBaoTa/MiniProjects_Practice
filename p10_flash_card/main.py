@@ -1,12 +1,24 @@
+# Description: A flash card app that helps you learn new languages
+# After 3 seconds, the card will flip to show the translation
+# If you know the word, click the check button and the word will be removed from the list
+# If you don't know the word, click the x button and the word will be shown again in the future
+
 from tkinter import *
 import pandas
 import random
 
 BACKGROUND_COLOR = "#B1DDC6"
-
-data = pandas.read_csv("data/data.csv")
-to_learn = data.to_dict(orient="records")
+to_learn = {}
 current_card = {}
+
+try: 
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError: 
+    original_data = pandas.read_csv("data/data.csv")
+    to_learn = original_data.to_dict(orient="records")
+else: 
+    to_learn = data.to_dict(orient="records")
+
 
 def new_card():
     global current_card, flip_timer
@@ -24,6 +36,12 @@ def flip_card():
     canvas.itemconfig(card_word, text=current_card["english"])
     canvas.itemconfig(card_bg, image=card_back_img)
 
+
+def is_known():
+    to_learn.remove(current_card)
+    data = pandas.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv", index=False)
+    new_card()
 
 window = Tk()
 window.title("Flashy")
@@ -47,7 +65,7 @@ wrong_button = Button(image=wrong_img, highlightthickness=0, command=new_card)
 wrong_button.grid(row=1, column=0)
 
 check_img = PhotoImage(file="images/correct.png")
-check_button = Button(image=check_img, highlightthickness=0, command=new_card)
+check_button = Button(image=check_img, highlightthickness=0, command=is_known)
 check_button.grid(row=1, column=1)
 
 
